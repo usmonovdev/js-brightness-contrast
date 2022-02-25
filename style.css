@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+.container{
+    background: url(./img/rasm.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rangeBright{
+    width: 250px;
+    height: 60px;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(39, 39, 39, 0.384);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 88%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    transition: 300ms ease-in-out;
+}
+
+.rangeBright:hover{
+    transform: translate(-50%, -50%) scale(1.1) rotate(-90deg);
+}
+
+.iconSun{
+    transform: rotate(90deg);
+    font-size: 1.5rem;
+    color: #daa520;
+}
+
+.iconMoon{
+    transform: rotate(90deg);
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.700);
+}
+
+.rangeContras{
+    width: 250px;
+    height: 60px;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(39, 39, 39, 0.384);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    transition: 300ms ease-in-out;
+}
+
+.rangeContras:hover{
+    transform: translate(-50%, -50%) scale(1.1) rotate(-90deg);
+}
+
+.contrast0{
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: rotate(90deg);
+    opacity: 70%;
+}
+
+.contrast1{
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: rotate(90deg);
+}
+
+input{
+    -webkit-appearance: none;
+    height: 20px;
+    width: 150px;
+    background: rgb(228, 228, 228);
+    border-radius: 4px;
+}
+
+input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background: #daa520;
+    border-radius: 4px;
+}
